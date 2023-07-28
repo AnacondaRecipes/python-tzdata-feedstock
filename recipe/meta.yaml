@@ -35,7 +35,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  doc_url: https://tzdata.readthedocs.io/en/latest/
+  doc_url: https://tzdata.readthedocs.io/
   dev_url: https://github.com/python/tzdata
   summary: Provider of IANA time zone data
 
@@ -45,6 +45,8 @@ about:
     as a part of PEP 615.
 
 extra:
+  skip_lints:
+    - avoid_noarch
   recipe-maintainers:
     - ocefpaf
     - pganssle
