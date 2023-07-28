@@ -45,7 +45,7 @@ about:
     as a part of PEP 615.
 
 extra:
-  skip_lints:
+  skip-lints:
     - avoid_noarch
   recipe-maintainers:
     - ocefpaf
