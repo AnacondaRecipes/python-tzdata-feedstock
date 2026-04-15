@@ -1,4 +1,8 @@
 anaconda_config_version: 1
 upstream_sources:
-  - pypi:
-      identifier: tzdata
+  - github:
+      identifier: python/tzdata
+      use_max_tag: true
+      exclude_regex: (?i)^(?=.*(?:(?<=\d)rc\d*|(?<=\d)dev\d+|(?:^|[-._])(?:alpha|beta|gamma|pre|preview)(?:\d+)?|[-._]rc\d+|(?:^|[-._])dev\d+|(?:\d+\.)+\d+[ab]\d*)).+$
+      from_pattern: ^v?(\d+(?:\.\d+)*.*)$
+      to_pattern: \1
