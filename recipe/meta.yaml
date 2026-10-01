@@ -1,5 +1,5 @@
 {% set name = "tzdata" %}
-{% set version = "2026.3" %}
+{% set version = "2026.4" %}
 
 package:
   name: python-{{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4a1518b8993086a7982523e071643f3c0e5f213e75b21318e78bcabfff9d1415
+  sha256: f1b8bd365d8d210c55353f4d7f8d6d8561c0ba50d704b700d195a9424bba0d79
 
 build:
   number: 0
